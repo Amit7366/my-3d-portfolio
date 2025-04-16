@@ -21,10 +21,10 @@ function HeroExperience() {
         maxPolarAngle={Math.PI / 2}
       />
       <HeroLights/>
-      <Particles count={isMobile ? 100 : 200}/>
+      <Particles count={100}/>
       <group
         scale={isMobile ? 0.7 : 1}
-        position={[0,-3.5,0]}
+        position={[0,-4.5,0]}
         rotation={[0, -Math.PI / 4, 0]}
       >
         <Room />

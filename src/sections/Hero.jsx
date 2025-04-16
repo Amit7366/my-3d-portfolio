@@ -12,7 +12,7 @@ function Hero() {
       <div className="hero-layout">
         {/* Hero Content */}
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-          <div className="flex flex-col gap-7">
+          <div className="w-full md:w-2/5 flex flex-col gap-7">
             <div className="hero-text">
               <h1>
                 Shaping
