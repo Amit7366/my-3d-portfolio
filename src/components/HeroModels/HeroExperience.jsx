@@ -23,8 +23,8 @@ function HeroExperience() {
       <HeroLights/>
       <Particles count={100}/>
       <group
-        scale={isMobile ? 0.7 : 1}
-        position={[0,-4.5,0]}
+        scale={isMobile ? 1.6 : isTablet ? 2 : 1}
+        position={[0,-2.5,0]}
         rotation={[0, -Math.PI / 4, 0]}
       >
         <Room />
