@@ -1,10 +1,15 @@
 import React from "react";
 import { counterItems } from "../constants";
 import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const AnimatedCounter = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only animate once
+    threshold: 0.3,     // Adjust when to trigger (0.3 = 30% visible)
+  });
   return (
-    <div id="counter" className="padding-x-lg xl:mt-0 mt-32">
+    <div id="counter" className="padding-x-lg xl:mt-0 mt-32" ref={ref}>
       <div className="mx-auto grid-4-cols">
         {counterItems.map((item, index) => (
           <div key={index} className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center">
@@ -12,7 +17,7 @@ const AnimatedCounter = () => {
               key={counterItems.label}
               className="counter-number text-white text-5xl font-bold mb-2"
             >
-              <CountUp suffix={item.suffix} end={item.value} />
+               {inView && <CountUp suffix={item.suffix} end={item.value} />}
               
             </div>
             <div className="text-white-50 text-lg">{item.label}</div>
