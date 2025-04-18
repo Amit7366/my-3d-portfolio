@@ -12,8 +12,35 @@ const ShowcaseSection = () => {
 
 
 
+    useGSAP(() => {
+        const projects = [project1Ref.current, project2Ref.current, project3Ref.current];
+
+        projects.forEach((card,index) => {
+            gsap.fromTo(
+                card, 
+                { y: 50, opacity: 0 }, 
+                { 
+                    y: 0, 
+                    opacity: 1, 
+                    duration: 1, 
+                    delay: (index+1) * 0.3,
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top bottom",
+                    } 
+                });  
+        });
+        gsap.fromTo(
+            sectionRef.current,
+            { opacity: 0 },
+            { opacity: 1, duration: 1.5 }
+        )
+      },[]);
+
+
+
   return (
-    <div id="work" className='app-showcase'>
+    <div id="work" className='app-showcase' ref={sectionRef}>
       <div className='w-full'>
         <div className="showcaselayout">
             {/* left  */}
