@@ -247,18 +247,22 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
+    url:"https://www.instagram.com/omit333/",
     imgPath: "/images/insta.png",
   },
   {
     name: "fb",
+    url:"https://www.facebook.com/omit.singh.7/",
     imgPath: "/images/fb.png",
   },
   {
-    name: "x",
+    name: "Github",
+    url:"https://github.com/Amit7366",
     imgPath: "/images/x.png",
   },
   {
     name: "linkedin",
+    url:"https://www.linkedin.com/in/amitksingha/",
     imgPath: "/images/linkedin.png",
   },
 ];
