@@ -14,7 +14,7 @@ const Testimonials = () => {
                 {
                     testimonials.map(({imgPath,name,review,mentions}, index) => (
                         
-                           <GlowCard card={{review}} index={index}>
+                           <GlowCard key={name} card={{review}} index={index}>
                             <div className="flex items-center gap-3">
                                 <div>
                                     <img src={imgPath} alt={name} />
