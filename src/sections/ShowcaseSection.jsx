@@ -44,7 +44,7 @@ const ShowcaseSection = () => {
       <div className='w-full'>
         <div className="showcaselayout">
             {/* left  */}
-            <a href='https://www.cashooz.com/' className='first-project-wrapper group duration-500 ' ref={project1Ref}>
+            <a href='https://sinangiftcorner.web.app/' className='first-project-wrapper group duration-500 ' ref={project1Ref}>
                 <div className="image-wrapper overflow-hidden">
                     <img src="/images/project1.1.png" alt="Ryde" className='group-hover:scale-110 duration-500'/>
                 </div>
