@@ -44,17 +44,17 @@ const ShowcaseSection = () => {
       <div className='w-full'>
         <div className="showcaselayout">
             {/* left  */}
-            <div className='first-project-wrapper' ref={project1Ref}>
-                <div className="image-wrapper">
-                    <img src="/images/project1.png" alt="Ryde" />
+            <a href='https://www.cashooz.com/' className='first-project-wrapper group duration-500 ' ref={project1Ref}>
+                <div className="image-wrapper overflow-hidden">
+                    <img src="/images/project1.1.png" alt="Ryde" className='group-hover:scale-110 duration-500'/>
                 </div>
                 <div className='text-content'>
-                    <h2>On- Demand Made Simple with a powerful, User-friendly App called RYde</h2>
+                    <h2>Cashooz - Earn Meny in Click</h2>
                     <p>
-                       An app built wirth React Native that allows users to book rides, request rides, and track their rides. This app is a powerful tool for those who want to make life easier and more enjoyable. 
+                       An app built wirth React Typescript Express MongoDB that allows users to complete task, request payment, and track their work. This app is a powerful tool for those who want to make life easier and more enjoyable. 
                     </p>
                 </div>
-            </div>
+            </a>
             {/* right  */}
             <div className='project-list-wrapper overflow-hidden'>
                 <div className="project" ref={project2Ref}>
