@@ -49,10 +49,14 @@ const ShowcaseSection = () => {
                     <img src="/images/project1.1.png" alt="Ryde" className='group-hover:scale-110 duration-500'/>
                 </div>
                 <div className='text-content'>
-                    <h2>Cashooz - Earn Meny in Click</h2>
+                    {/* <h2>Cashooz - Earn Meny in Click</h2> */}
+                    <h2>Sinan Gift Corner</h2>
                     <p>
-                       An app built wirth React Typescript Express MongoDB that allows users to complete task, request payment, and track their work. This app is a powerful tool for those who want to make life easier and more enjoyable. 
+                       An app built wirth React Typescript Express MongoDB that allows users to order online, request payment, and track their order. This app is a powerful tool for those who want to make life easier and more enjoyable. 
                     </p>
+                    {/* <p>
+                       An app built wirth React Typescript Express MongoDB that allows users to complete task, request payment, and track their work. This app is a powerful tool for those who want to make life easier and more enjoyable. 
+                    </p> */}
                 </div>
             </a>
             {/* right  */}
