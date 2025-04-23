@@ -44,13 +44,13 @@ const ShowcaseSection = () => {
       <div className='w-full'>
         <div className="showcaselayout">
             {/* left  */}
-            <a href='https://sinangiftcorner.web.app/' className='first-project-wrapper group duration-500 ' ref={project1Ref}>
+            <a href='https://www.cashooz.com/' className='first-project-wrapper group duration-500 ' ref={project1Ref}>
                 <div className="image-wrapper overflow-hidden">
-                    <img src="/images/project1.1.png" alt="Ryde" className='group-hover:scale-110 duration-500'/>
+                    <img src="/images/project2.2.png" alt="Ryde" className='group-hover:scale-110 duration-500'/>
                 </div>
                 <div className='text-content'>
                     {/* <h2>Cashooz - Earn Meny in Click</h2> */}
-                    <h2>Sinan Gift Corner</h2>
+                    <h2>Cashooz</h2>
                     <p>
                        An app built wirth React Typescript Express MongoDB that allows users to order online, request payment, and track their order. This app is a powerful tool for those who want to make life easier and more enjoyable. 
                     </p>
@@ -60,19 +60,19 @@ const ShowcaseSection = () => {
                 </div>
             </a>
             {/* right  */}
-            <div className='project-list-wrapper overflow-hidden'>
-                <div className="project" ref={project2Ref}>
-                    <div className='image-wrapper bg-[#ffefdb]'>
-                        <img src="/images/project2.png" alt="Library" />
+            <div  className='project-list-wrapper overflow-hidden'>
+                <a href='https://sinangiftcorner.web.app/' className="project" ref={project2Ref}>
+                    <div className='image-wrapper bg-[#37668f]'>
+                        <img src="/images/project1.1.png" alt="Library" />
                     </div>
-                    <h2>Libray Managment</h2>
-                </div>
-                <div className="project" ref={project3Ref}>
+                    <h2>Sinan</h2>
+                </a>
+                <a href='#' className="project" ref={project3Ref}>
                     <div className='image-wrapper bg-[#ffe7eb]'>
                         <img src="/images/project3.png" alt="YC Direactory" />
                     </div>
                     <h2>YC Direactory - A startup project</h2>
-                </div>
+                </a>
             </div>
         </div>
 
