@@ -9,6 +9,7 @@ import TechStack from "./sections/TechStack";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import MoreProject from "./sections/MoreProject";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ExperienceSection/>
       <TechStack/>
       <Testimonials/>
+      <MoreProject/>
       <Contact/>
       <Footer/>
     </>

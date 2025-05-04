@@ -24,7 +24,7 @@ const TechStack = () => {
           sub="The Skills I bring to the table"
         />
         <div className="tech-grid">
-          {techStackIcons.map((icon, index) => (
+          {/* {techStackIcons.map((icon, index) => (
             <div
               key={icon.name}
               className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
@@ -39,8 +39,8 @@ const TechStack = () => {
                 </div>
               </div>
             </div>
-          ))}
-          {/* {
+          ))} */}
+          {
             techStackImgs.map((icon, index) => (
               <div
                 key={icon.name}
@@ -57,7 +57,7 @@ const TechStack = () => {
                 </div>
               </div>
             ))
-          } */}
+          }
         </div>
       </div>
     </div>
